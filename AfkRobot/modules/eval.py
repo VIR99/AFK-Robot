@@ -27,10 +27,6 @@ async def edit_or_reply(msg: Message, **kwargs):
     spec = getfullargspec(func.__wrapped__).args
     await func(**{k: v for k, v in kwargs.items() if k in spec})
 
-
-@app.on_edited_message(
-    filters.command("eval")
-    & filters.user(SUDOERS))
 @app.on_message(
     filters.command("eval")
     & filters.user(SUDOERS))
@@ -131,10 +127,6 @@ async def forceclose_command(_, CallbackQuery):
     except:
         return
 
-
-@app.on_edited_message(
-    filters.command("sh")
-    & filters.user(SUDOERS))
 @app.on_message(
     filters.command("sh")
     & filters.user(SUDOERS))
