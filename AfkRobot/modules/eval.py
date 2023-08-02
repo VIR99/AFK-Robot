@@ -27,6 +27,7 @@ async def edit_or_reply(msg: Message, **kwargs):
     spec = getfullargspec(func.__wrapped__).args
     await func(**{k: v for k, v in kwargs.items() if k in spec})
 
+
 @app.on_message(
     filters.command("eval")
     & filters.user(SUDOERS))
@@ -127,6 +128,7 @@ async def forceclose_command(_, CallbackQuery):
     except:
         return
 
+
 @app.on_message(
     filters.command("sh")
     & filters.user(SUDOERS))
@@ -181,3 +183,11 @@ async def shellrunner(_, message: Message):
             await app.send_document(
                 message.chat.id,
                 "output.txt",
+                reply_to_message_id=message.id,
+                caption="<code>Output</code>",
+            )
+            return os.remove("output.txt")
+        await edit_or_reply(message, text=f"<b>OUTPUT :</b>\n<pre>{output}</pre>")
+    else:
+        await edit_or_reply(message, text="<b>OUTPUT :</b>\n<code>None</code>")
+    
