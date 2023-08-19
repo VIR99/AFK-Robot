@@ -1,0 +1,27 @@
+name: PyLint
+on: [push, pull_request]
+jobs:
+  PEP8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11.4
+      - name: Install Python lint libraries
+        run: |
+          pip install black
+      - name: lint with black
+        run: |
+          black .
+      # commit changes
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'ᴀᴜᴛᴏ ғɪxᴇs ʙʏ ᴋʀɪsʜɴᴀ' 
+          commit_options: '--no-verify' 
+          repository: .
+          commit_user_name: ˹ᴋʀɪsʜɴᴀ˼
+          commit_user_email: OfficialKrishna7618@gmail.com
+          commit_author: ˹ᴋʀɪsʜɴᴀ˼ <OfficialKrishna7618@gmail.com>
+          
