@@ -1,7 +1,4 @@
-
-
 import asyncio
-
 from typing import Union
 from datetime import datetime, timedelta
 from AfkRobot import cleanmode, app, botname
@@ -87,7 +84,7 @@ RANDOM = [
 HELP_TEXT = f"""ㅤ[ㅤㅤㅤㅤㅤ ](https://telegra.ph/file/661626d941bc44a97edf4.jpg)ㅤㅤ
 ■ Hᴇʏ Gᴜʏs, 
 
-※ Wᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ᴏғ « 𓆩 ᴀ ғ ᴋ »🍁« ʙ ᴏ ᴛ 𓆪 ».
+※ Wᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ᴏғ {(await app.get_me()).mention}
 
 ※ Tʜɪs ʙᴏᴛ ᴘʀᴏᴠɪᴅᴇs sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇ... 
 
