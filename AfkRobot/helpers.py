@@ -84,7 +84,7 @@ RANDOM = [
 HELP_TEXT = f"""ㅤ[ㅤㅤㅤㅤㅤ ](https://telegra.ph/file/661626d941bc44a97edf4.jpg)ㅤㅤ
 ■ Hᴇʏ Gᴜʏs, 
 
-※ Wᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ᴏғ {(await app.get_me()).mention}
+※ Wᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ᴏғ ᴀғᴋ ʙᴏᴛ
 
 ※ Tʜɪs ʙᴏᴛ ᴘʀᴏᴠɪᴅᴇs sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇ... 
 
